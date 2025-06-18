@@ -7,6 +7,7 @@ import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import ProtectedRoute from './components/auth/ProtectedRoute'; // Adjusted path
 import UITestPage from './pages/UITestPage'; // Import the new test page
+import OnboardingPage from './pages/OnboardingPage'; // Import OnboardingPage
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             }
           />
           <Route path="/ui-test" element={<UITestPage />} /> {/* Add route for UITestPage */}
+          <Route path="/onboarding" element={<OnboardingPage />} /> {/* Add route for OnboardingPage */}
           {/* Add other routes here */}
         </Routes>
       </Layout>
